@@ -38,13 +38,23 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*------------------------------------------------------------------------
 # Base Styles
 ------------------------------------------------------------------------*/
-
+a {
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+}
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	margin: 1em 0;
+	line-height: 1.2em;
+}
+.call-to-action h2,
+.call-to-action h4 {
+	line-height: 1.2em !important;
 }
 p {
 	margin-bottom: 15px;
@@ -56,7 +66,6 @@ p {
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
-h2,
 .title-main {
 	font-weight: bold;
 }
@@ -153,7 +162,7 @@ input[type="submit"]:focus,
 }
 .entry-title {
 	display: block;
-	margin: 60px 0;
+	margin: 60px 0 10px;
 	position: relative;
 	z-index: 1;
 }
@@ -177,9 +186,10 @@ input[type="submit"]:focus,
 .button-primary,
 .button-secondary,
 input[type="submit"] {
-	border-radius: 2px;
+	border: none;
+	border-radius: 1px;
 	display: inline-block;
-	padding: 8px 15px;
+	padding: 5px 45px;
 }
 
 /* Positioning */
@@ -206,6 +216,7 @@ input[type="submit"] {
 	.call-to-action .p-button-primary {
 		display: inline;
 		margin-top: 0;
+		transition: all 0.5s ease 0s;
 	}
 	.gridblock .p-button-secondary {
 		margin: 25px 0;
@@ -245,6 +256,7 @@ hr {
 }
 .navbar-default .navbar-nav {
 	margin-left: -15px;
+	padding-top: 25px;
 }
 
 /* Links */
@@ -253,6 +265,12 @@ hr {
 }
 .navbar-default .navbar-nav > li:first-child > a {
 	margin-left: 0;
+}
+
+.navbar-default .navbar-nav .dropdown-menu {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 /* Hover & Active */
@@ -380,10 +398,8 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-	list-style:none;
+.post {
+	padding-bottom: 25px;
 }
 
 /* Comments */
@@ -391,8 +407,53 @@ blockquote p,
 	float: left;
 	padding-right: 15px;
 }
+#cancel-comment-reply-link {
+	float: right;
+	text-decoration: underline;
+}
+.comment-reply-title a,
+.comment-meta a {
+	text-decoration: underline;
+}
+#cancel-comment-reply-link:hover,
+#cancel-comment-reply-link:focus,
+.comment-reply-title a:hover,
+.comment-reply-title a:focus,
+.comment-meta a:hover,
+.comment-meta a:focus {
+	text-decoration: none;
+}
+.widget ul#recentcomments > li > a:hover,
+.widget ul#recentcomments > li > a:focus,
+.widget ul#recentcomments > li > span > a:hover,
+.widget ul#recentcomments > li > span > a:focus {
+	text-decoration: none;
+}
+.widget ul#recentcomments > li > a {
+	text-decoration: underline;
+}
+.widget ul#recentcomments > li.recentcomments {
+	padding: 8px 0 !important;
+}
+.widget ul#recentcomments > li::before {
+	font-family: 'FontAwesome';
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    content: "\f04b";
+}
+.widget ul#recentcomments > li {
+	line-height: 1.6;
+}
+.comments-title {
+	margin: 0 0 50px;
+}
+.comments {
+	padding: 25px;
+	margin-top: 25px;
+}
 .panel-footer {
-	padding: 20px 15px;
+	padding: 0px 15px 25px;
+	border-top: none;
 }
 
 /* Call to Action */
@@ -405,6 +466,189 @@ blockquote p,
 	margin-bottom: 10px;
 }
 
+/* Sidebar Widget Area */
+.widget-area {
+	margin-top: 25px;
+	padding: 25px;
+	list-style:none;
+}
+.sidebar {
+	padding: 20px 12px;
+	margin-bottom: 25px;
+}
+aside.sidebar h2.widget-title {
+	padding-bottom: 10px;
+}
+.widget {
+    padding-bottom: 20px;
+}
+.tagcloud a {
+    line-height: 28px;
+    text-decoration: underline;
+}
+.tagcloud a:hover,
+.tagcloud a:focus {
+    text-decoration: none;
+}
+
+/* Forms */
+.form-inline .form-control {
+    margin-bottom: 6px;
+}
+
+/* Navigation */
+.navbar-nav > li > a {
+	text-decoration: none;
+}
+.nav-next,
+.nav-previous {
+	margin-bottom: 25px;
+    padding: 8px 30px;
+    transition: all 0.5s ease 0s;
+}
+.nav-previous {
+	float: left;
+}
+.nav-next {
+	float: right;
+}
+.nav-next a,
+.nav-previous a {
+    text-decoration: none;
+}
+.nav-next a:hover,
+.nav-next a:focus,
+.nav-previous a:hover,
+.nav-previous a:focus {
+	text-decoration: none;
+}
+.sidebar .nav > li > a:focus, 
+.sidebar .nav > li > a:hover {
+	background: none transparent;
+	text-decoration: none;
+}
+.sidebar .nav > li::before {
+    font-family: 'FontAwesome';
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    content: "\f04b";
+    float: left;
+	padding-top: 10px;
+}
+.sidebar .nav > li > a {
+	padding: 8px 0;
+	text-decoration: underline;
+}
+.sidebar .nav > li {
+	line-height: 1.6;
+}
+
+/* entry- */
+.entry-meta {
+	padding-bottom:30px;
+}
+.entry-footer {
+	background: none transparent;
+}
+.entry-footer a,
+.entry-meta a  {
+	text-decoration: underline;
+}
+.entry-footer a:hover,
+.entry-footer a:focus,
+.entry-meta a:hover,
+.entry-meta a:focus   {
+	text-decoration: none;
+}
+
+/* calendar widget */
+#wp-calendar {
+	width: 100%; 
+}
+#wp-calendar caption { 
+	text-align: right; 
+	margin-top: 10px; 
+	margin-bottom: 15px; 
+}
+#wp-calendar thead th { 
+	padding-bottom: 10px; 
+}
+#wp-calendar tbody td { 
+	text-align: center; 
+	padding:8px;
+}
+#wp-calendar tfoot #next { 
+	text-align: right; 
+	text-decoration: underline; 
+}
+#wp-calendar tfoot #prev { 
+	padding-top: 10px; 
+	text-decoration: underline; 
+}
+.table > thead > tr > th {
+    border-bottom: none;
+}
+td, th {
+    padding: 1.2rem 1.5rem;
+}
+.widget_calendar td, th {
+	border-bottom: none !important;
+}
+dd {
+    margin-left: 4.2rem;
+    margin-bottom: 1.2rem;
+}
+dt {
+	margin-bottom:.5rem;
+}
+ul li,
+ol li {
+	line-height: 2.3;
+}
+code {
+    border-radius: 4px;
+}
+.cat-links a,
+.tags-links a {
+	line-height: 2;
+}
+
+/* Other */
+.panel {
+	border: none !important;
+	box-shadow: none;
+}
+.panel-heading {
+	border-bottom: none !important;
+}
+.navigation.posts-navigation {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.type-post.hentry {
+    margin-bottom: 60px;
+}
+.type-post h1.entry-title a {
+    padding: 0 !important;
+}
+.type-post h1.entry-title {
+	text-align: left !important;
+}
+.search-no-results .jumbotron {
+	padding-left: 0;
+}
+.search-no-results .container .jumbotron {
+	padding-left: 0;
+}
+.jumbotron p {
+    margin-top: 30px;
+}
+.jumbotron {
+	margin-bottom: 30px;
+}
+a.url {
+	text-decoration: underline;
+}
 /*------------------------------------------------------------------------
 # Plugins
 ------------------------------------------------------------------------*/
@@ -451,6 +695,15 @@ blockquote p,
 }
 .entry-content {
 	margin-top: 0;
+}
+.entry-content a {
+	text-decoration: underline;
+}
+.entry-content a.btn {
+    text-decoration: none !important;
+}
+.widget_calendar .table > tfoot > tr > td {
+	border-top: none;
 }
 .colored-bg {
 	padding-left: 0;
