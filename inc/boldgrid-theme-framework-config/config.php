@@ -26,7 +26,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'7' => array( '[action]boldgrid_site_identity' ),
 		'6' => array( '[action]boldgrid_primary_navigation' ),
 		'11' => array( '[widget]boldgrid-widget-2' ),
-		// '8' => array( '[menu]social' ),
+		'8' => array( '[menu]social' ),
 		'13' => array( '[menu]tertiary' ),
 	);
 
@@ -111,7 +111,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Questrial';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 16;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'none';
 
 	// Typography Alternate Headings.

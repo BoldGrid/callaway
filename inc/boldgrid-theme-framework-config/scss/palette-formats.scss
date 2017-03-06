@@ -38,7 +38,9 @@
 	.entry-footer .tags-links > a {
 		color: $palette-primary_1;
 	}
-	hr,
+	hr {
+		background: $text-contrast-palette-primary_1;
+	}
 	.panel-body,
 	.panel-footer,
 	.sidebar,
@@ -118,7 +120,6 @@
 	}
 	.form-submit .submit:hover,
 	.form-submit .submit:focus,
-	.entry-title a,
 	.entry-footer a {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
@@ -311,7 +312,8 @@
 	.navbar-default .navbar-text,
 	.call-to-action h2,
 	.call-to-action h4,
-	.site-title a {
+	.site-title a,
+	.site-description {
 		color: $palette-primary-neutral-color;
 	}
 	.navbar-default .navbar-toggle .icon-bar {

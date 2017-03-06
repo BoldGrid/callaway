@@ -45,6 +45,9 @@ a:hover,
 a:focus {
 	text-decoration: none;
 }
+.entry-content a:hover {
+	text-decoration: none;
+}
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
@@ -162,7 +165,7 @@ input[type="submit"]:focus,
 }
 .entry-title {
 	display: block;
-	margin: 60px 0 10px;
+	margin: 40px 0;
 	position: relative;
 	z-index: 1;
 }
@@ -178,6 +181,7 @@ input[type="submit"]:focus,
 }
 .entry-title a {
 	padding: 0 15px;
+	text-transform: lowercase;
 }
 
 /*-----------------------------------------------
@@ -190,6 +194,10 @@ input[type="submit"] {
 	border-radius: 1px;
 	display: inline-block;
 	padding: 5px 45px;
+}
+
+a.button-primary {
+	text-decoration: none !important;
 }
 
 /* Positioning */
@@ -679,6 +687,9 @@ a.url {
 .attribution {
 	padding-bottom: 30px;
 }
+footer aside.widget {
+    padding-bottom: 0 !important;
+}
 
 
 
@@ -686,6 +697,11 @@ a.url {
 /* Colors */
 .site-title a {
 	float: right;
+}
+.site-description {
+    float: right;
+    clear: both;
+    display: none;
 }
 .site-header {
     padding-bottom: 20px;
