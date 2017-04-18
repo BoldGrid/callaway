@@ -6,7 +6,7 @@
 	color: $text-contrast-palette-primary_2;
 
 	/*-----------------------------------------------
-	## 1 f9690e
+	## 1
 	-----------------------------------------------*/
 	.widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
 		background: $palette-primary_1;
@@ -60,7 +60,6 @@
 		border-top: 1px solid $palette-primary_1;
 		color: $palette-primary_1;
 	}
-
 	.mod-blockquote {
 		border-left: 7px solid $palette-primary_1;
 	}
@@ -84,7 +83,7 @@
 	}
 
 	/*-----------------------------------------------
-	## 2 ebf5ff
+	## 2
 	-----------------------------------------------*/
 	.media-heading a.url,
 	.link-primary,
@@ -135,15 +134,13 @@
 		border-bottom: 1px solid $palette-primary_2;
 		color: $palette-primary_5;
 	}
-
-	/* Nav Toggle */
 	.navbar-default .navbar-toggle {
 		background: $palette-primary_2;
 		border-color: $palette-primary_2;
 	}
 
 	/*-----------------------------------------------
-	## 3 1a091c
+	## 3
 	-----------------------------------------------*/
 	.palette-primary.disabled-footer .site-footer,
 	.navbar-default .navbar-toggle:hover,
@@ -203,26 +200,21 @@
 		background: $palette-primary_3;
 		border: 1px solid $palette-primary_3;
 		color: $text-contrast-palette-primary_3;
-	}	
-
-	/* xs */
+	}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_3;
 	}
 	.navbar-default .navbar-nav .dropdown-menu {
 		background: $palette-primary_3;
 	}
-
-	/* sm */
-	@media (min-width: 768px) {
-		/* Dropdown Child Default */
+	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 			color: $text-contrast-palette-primary_3;
 		}
 	}
 
 	/*-----------------------------------------------
-	## 4 322933
+	## 4
 	-----------------------------------------------*/
 	#menu-social li a:hover,
 	#menu-social li a:focus,
@@ -285,8 +277,6 @@
 	    background: $palette-primary_2;
 	    color: $text-contrast-palette-primary_2;
 	}
-	
-	/* xs */
 	.navbar-default .navbar-nav > .dropdown.active.open > a,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:hover,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:focus,
@@ -294,9 +284,8 @@
 		color: $text-contrast-palette-primary_4;
 	}
 
-
 	/*-----------------------------------------------
-	## 5 ffe2cc
+	## 5
 	-----------------------------------------------*/
 	.colored-bg h2,
 	.colored-bg h3,
@@ -318,24 +307,5 @@
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background: $text-contrast-palette-primary-neutral-color;
-	}
-
-	/*-----------------------------------------------
-	# Et Cetera
-	-----------------------------------------------*/
-	.woocommerce #respond input#submit,
-	.woocommerce a.button,
-	.woocommerce button.button,
-	.woocommerce input.button,
-	.woocommerce p.buttons a.button {
-		background-color: #a46497;
-		color: #fff;
-	}
-	.woocommerce p.buttons a.button:hover {
-		background-color: #dad8da;
-		color: #515151;
-	}
-	select#cat {
-		color: #333333 !important;
 	}
 }

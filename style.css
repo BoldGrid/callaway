@@ -38,18 +38,13 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*------------------------------------------------------------------------
 # Base Styles
 ------------------------------------------------------------------------*/
-a {
-	text-decoration: none;
-}
-a:hover,
-a:focus {
-	text-decoration: none;
-}
-.entry-content a:hover {
-	text-decoration: none;
-}
+
 /*-----------------------------------------------
 ## Positioning
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+## Typography
 -----------------------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -62,20 +57,11 @@ h1, h2, h3, h4, h5, h6,
 p {
 	margin-bottom: 15px;
 }
-.mod-divider p {
-	margin-top: -30px;
-}
-
-/*-----------------------------------------------
-## Typography
------------------------------------------------*/
-.title-main {
-	font-weight: bold;
-}
-.site-footer a {
-	text-decoration: underline;
-}
+a,
+a:hover,
+a:focus,
 .entry-title a:hover,
+.entry-content a:hover,
 .button-primary:hover,
 .button-primary:active,
 .button-secondary:hover,
@@ -88,20 +74,11 @@ input[type="submit"]:focus,
 .site-footer a:focus {
 	text-decoration: none;
 }
-#menu-social li a {
-	text-align: right;
+.site-footer a {
+	text-decoration: underline;
 }
 
-/* Icons */
-.mod-divider i {
-	font-size: 52px;
-	padding: 0 .5em;
-}
-.mod-icon-circle i {
-	font-size: 35px;
-}
-
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .entry-title,
 #secondary-menu,
 #tertiary-menu,
@@ -113,7 +90,6 @@ input[type="submit"]:focus,
 .site-description,
 .navbar-default .navbar-nav,
 .navbar-default .navbar-nav .open .dropdown-menu,
-/*.menu-social,*/
 .title-main,
 .xs-center,
 .mod-img,
@@ -123,19 +99,16 @@ input[type="submit"]:focus,
 	text-align: center;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav,
 	.navbar-default .navbar-nav .open .dropdown-menu {
 		text-align: left;
 	}
-	/*.menu-social {
-		text-align: right;
-	}*/
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.site-title,
 	.site-description,
 	.xs-center,
@@ -153,13 +126,6 @@ input[type="submit"]:focus,
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-page_home .entry-title {
-	display: none;
-}
-.title-main {
-	margin: 0;
-	padding: 20px 0;
-}
 .post-title-hidden .entry-meta {
 	margin-top: 50px;
 }
@@ -195,7 +161,6 @@ input[type="submit"] {
 	display: inline-block;
 	padding: 5px 45px;
 }
-
 a.button-primary {
 	text-decoration: none !important;
 }
@@ -217,8 +182,8 @@ a.button-primary {
 	margin-top: 0;
 }
 
-/* sm */
-@media (min-width: 500px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary,
 	.call-to-action .p-button-primary {
@@ -274,7 +239,6 @@ hr {
 .navbar-default .navbar-nav > li:first-child > a {
 	margin-left: 0;
 }
-
 .navbar-default .navbar-nav .dropdown-menu {
 	border: none;
 	border-radius: 0;
@@ -298,13 +262,6 @@ hr {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 	background: none;
 }
-
-/* sm */
-/*@media (min-width: 768px) {
-	.navbar-default {
-		float: right;
-	}
-}*/
 
 /*-----------------------------------------------
 ## Other Menus
@@ -355,8 +312,8 @@ hr {
 	margin-top: 0;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.menu-social {
 		margin-top: 15px;
 		padding-left: 5px;
@@ -371,16 +328,6 @@ hr {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-.mod-divider {
-	margin: 4em 0;
-}
-.mod-icon-circle i {
-	border-radius: 50%;
-	padding: 15px;
-}
-.mod-icon-circle .fa-lightbulb-o {
-	padding: 15px 20px;
-}
 blockquote,
 .mod-blockquote {
 	padding-bottom: 0;
@@ -403,6 +350,7 @@ blockquote p,
 .search .jumbotron {
 	background: none;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -657,6 +605,7 @@ code {
 a.url {
 	text-decoration: underline;
 }
+
 /*------------------------------------------------------------------------
 # Plugins
 ------------------------------------------------------------------------*/
@@ -691,10 +640,7 @@ footer aside.widget {
     padding-bottom: 0 !important;
 }
 
-
-
 /* Custom */
-/* Colors */
 .site-title a {
 	float: right;
 }
@@ -731,8 +677,6 @@ footer aside.widget {
 .hentry {
     margin: 0;
 }
-
 .gallery {
 	padding: 0;
 }
-
