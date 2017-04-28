@@ -50,10 +50,6 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.2em;
 }
-.call-to-action h2,
-.call-to-action h4 {
-	line-height: 1.2em !important;
-}
 p {
 	margin-bottom: 15px;
 }
@@ -68,8 +64,6 @@ a:focus,
 .button-secondary:active,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
-.woocommerce p.buttons a.button:hover,
-.woocommerce p.buttons a.button:focus,
 .site-footer a:hover,
 .site-footer a:focus {
 	text-decoration: none;
@@ -77,12 +71,23 @@ input[type="submit"]:focus,
 .site-footer a {
 	text-decoration: underline;
 }
+.call-to-action h2,
+.call-to-action h4 {
+	line-height: 1.2em !important;
+}
+.call-to-action .p-button-primary {
+	margin-top: 0;
+}
+.call-to-action .p-button-primary {
+		display: inline;
+		margin-top: 0;
+		transition: all 0.5s ease 0s;
+	}
 
 /* Extra small devices (phones, less than 768px) */
 .entry-title,
 #secondary-menu,
 #tertiary-menu,
-.mod-divider p,
 .site-footer,
 .site-info,
 .attribution,
@@ -92,8 +97,6 @@ input[type="submit"]:focus,
 .navbar-default .navbar-nav .open .dropdown-menu,
 .title-main,
 .xs-center,
-.mod-img,
-.mod-img-circle,
 .p-button-primary,
 .p-button-secondary {
 	text-align: center;
@@ -112,8 +115,6 @@ input[type="submit"]:focus,
 	.site-title,
 	.site-description,
 	.xs-center,
-	.mod-img,
-	.mod-img-circle,
 	.p-button-primary,
 	.p-button-secondary {
 		text-align: left;
@@ -131,7 +132,7 @@ input[type="submit"]:focus,
 }
 .entry-title {
 	display: block;
-	margin: 40px 0;
+	margin: 40px -15px 0 0;
 	position: relative;
 	z-index: 1;
 }
@@ -178,15 +179,12 @@ a.button-primary {
 	display: block;
 	margin-top: 15px;
 }
-.call-to-action .p-button-primary {
-	margin-top: 0;
-}
+
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.button-primary,
-	.button-secondary,
-	.call-to-action .p-button-primary {
+	.button-secondary {
 		display: inline;
 		margin-top: 0;
 		transition: all 0.5s ease 0s;
@@ -328,13 +326,11 @@ hr {
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-blockquote,
-.mod-blockquote {
+blockquote {
 	padding-bottom: 0;
 	padding-top: 0;
 }
-blockquote p,
-.mod-blockquote p {
+blockquote p {
 	padding-left: 15px;
 }
 
@@ -410,11 +406,6 @@ blockquote p,
 .panel-footer {
 	padding: 0px 15px 25px;
 	border-top: none;
-}
-
-/* Call to Action */
-.single .call-to-action {
-	display: none;
 }
 
 /* Buttons */
@@ -501,7 +492,7 @@ aside.sidebar h2.widget-title {
 
 /* entry- */
 .entry-meta {
-	padding-bottom:30px;
+	padding-bottom: 30px;
 }
 .entry-footer {
 	background: none transparent;
@@ -559,7 +550,7 @@ dt {
 }
 ul li,
 ol li {
-	line-height: 2.3;
+	line-height: 2.5;
 }
 code {
     border-radius: 4px;
@@ -586,6 +577,7 @@ code {
 }
 .type-post h1.entry-title a {
     padding: 0 !important;
+    margin-left: -15px;
 }
 .type-post h1.entry-title {
 	text-align: left !important;
@@ -595,6 +587,9 @@ code {
 }
 .search-no-results .container .jumbotron {
 	padding-left: 0;
+}
+.sidebar #searchform .button-primary {
+	padding: 0 !important;
 }
 .jumbotron p {
     margin-top: 30px;
@@ -613,13 +608,6 @@ a.url {
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce .page-title {
-	margin: 0;
-}
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
-	text-decoration: none;
-}
 
 /*------------------------------------------------------------------------
 # Footer
