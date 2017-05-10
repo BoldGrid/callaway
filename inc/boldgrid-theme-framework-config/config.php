@@ -116,6 +116,41 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		)
 	);
 
+	// Override customizer options per subcategory.
+	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Photography':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Consulting':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			break;
+		case 'Fitness':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
+			break;
+		case 'Fashion':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
+			break;
+		case 'Real Estate':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
+			break;
+		case 'General':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
+			break;
+		case 'Music':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			break;
+		case 'Restaurant':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][4]['default'] = true;
+			break;
+		case 'Home Repair':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][5]['default'] = true;
+			break;	
+		// Default
+		default:
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			break;
+	}
+
 	// Text Contrast Colors.
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';

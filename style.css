@@ -19,20 +19,27 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Positioning
 	## Typography
 	## Titles
-	## Buttons
-	## Et Cetera
 # Header
 # Navigation
 	## Main Menu
 	## Other Menus
 	## Social Menus
-# Modules
-	## Global
 # Pages
+	## Global
+	## Content
+	## Jumbotron
 # Posts
-# Plugins
-	## WooCommerce
+	## Comments
+	## Sidebar Widgets
+	## Calendar Widget
+	## Forms
+	## Posts Navigation
+	## Sidebar Navigation
+	## Post Meta Data
+	## Panels
+	## Posts Formats
 # Footer
+# Custom
 ------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------
@@ -42,10 +49,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-
-/*-----------------------------------------------
-## Typography
------------------------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.2em;
@@ -53,87 +56,32 @@ h1, h2, h3, h4, h5, h6,
 p {
 	margin-bottom: 15px;
 }
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
 a,
 a:hover,
 a:focus,
 .entry-title a:hover,
 .entry-content a:hover,
-.button-primary:hover,
-.button-primary:active,
-.button-secondary:hover,
-.button-secondary:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
 .site-footer a:hover,
-.site-footer a:focus {
+.site-footer a:focus,
+#footer-center-menu a {
 	text-decoration: none;
 }
 .site-footer a {
 	text-decoration: underline;
 }
-.call-to-action h2,
-.call-to-action h4 {
-	line-height: 1.2em !important;
-}
-.call-to-action .p-button-primary {
-	margin-top: 0;
-}
-.call-to-action .p-button-primary {
-		display: inline;
-		margin-top: 0;
-		transition: all 0.5s ease 0s;
-	}
-
-/* Extra small devices (phones, less than 768px) */
-.entry-title,
-#secondary-menu,
-#tertiary-menu,
-.site-footer,
-.site-info,
-.attribution,
-.site-title,
-.site-description,
-.navbar-default .navbar-nav,
-.navbar-default .navbar-nav .open .dropdown-menu,
-.title-main,
-.xs-center,
-.p-button-primary,
-.p-button-secondary {
-	text-align: center;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.navbar-default .navbar-nav,
-	.navbar-default .navbar-nav .open .dropdown-menu {
-		text-align: left;
-	}
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	.site-title,
-	.site-description,
-	.xs-center,
-	.p-button-primary,
-	.p-button-secondary {
-		text-align: left;
-	}
-	.title-main {
-		text-align: right;
-	}
-}
 
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.post-title-hidden .entry-meta {
-	margin-top: 50px;
-}
 .entry-title {
 	display: block;
-	margin: 40px -15px 0 0;
+	margin: 40px 0;
 	position: relative;
+	text-align: center;
 	z-index: 1;
 }
 .entry-title::before {
@@ -150,61 +98,36 @@ input[type="submit"]:focus,
 	padding: 0 15px;
 	text-transform: lowercase;
 }
-
-/*-----------------------------------------------
-## Buttons
------------------------------------------------*/
-.button-primary,
-.button-secondary,
-input[type="submit"] {
-	border: none;
-	border-radius: 1px;
-	display: inline-block;
-	padding: 5px 45px;
+.site-title {
+	text-align: center;
 }
-a.button-primary {
-	text-decoration: none !important;
+.site-title a {
+	float: right;
 }
-
-/* Positioning */
-.p-button-primary,
-.p-button-secondary {
-	margin: 25px 0;
-	padding-top: 15px;
+.site-description {
+    float: right;
+    clear: both;
+    display: none;
+    text-align: center;
+}
+.post-title-hidden .entry-meta {
+	margin-top: 50px;
 }
 
-/* Block vs. Inline */
-.button-primary,
-.button-secondary {
-	display: block;
-	margin-top: 15px;
-}
-
-
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.button-primary,
-	.button-secondary {
-		display: inline;
-		margin-top: 0;
-		transition: all 0.5s ease 0s;
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.site-title,
+	.site-description {
+		text-align: left;
 	}
-	.gridblock .p-button-secondary {
-		margin: 25px 0;
-	}
-}
-
-/*-----------------------------------------------
-## Et Cetera
------------------------------------------------*/
-hr {
-	border: 0;
-	height: 1px;
 }
 
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
+.site-header {
+    padding-bottom: 20px;
+}
 
 /*------------------------------------------------------------------------
 # Navigation
@@ -230,7 +153,7 @@ hr {
 	padding-top: 25px;
 }
 
-/* Links */
+/* navbar links */
 .navbar-default .navbar-nav > li > a {
 	padding: 10px;
 }
@@ -261,6 +184,20 @@ hr {
 	background: none;
 }
 
+/* xs */
+.navbar-default .navbar-nav,
+.navbar-default .navbar-nav .open .dropdown-menu {
+	text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navbar-default .navbar-nav,
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		text-align: left;
+	}
+}
+
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
@@ -272,6 +209,7 @@ hr {
 #secondary-menu,
 #tertiary-menu {
 	background: none;
+	text-align: center;
 }
 .footer-center-menu {
 	padding: 1.1em 0;
@@ -293,7 +231,6 @@ hr {
 .menu-social li {
 	display: inline;
 	list-style: none;
-	padding-right: 10px;
 }
 #menu-social ul {
 	padding-left: 0px;
@@ -304,6 +241,7 @@ hr {
 }
 #menu-social li a {
 	display: inline-block;
+	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
 }
 .navbar-nav .menu-social {
@@ -320,7 +258,7 @@ hr {
 }
 
 /*------------------------------------------------------------------------
-# Modules
+# Pages
 ------------------------------------------------------------------------*/
 
 /*-----------------------------------------------
@@ -333,18 +271,58 @@ blockquote {
 blockquote p {
 	padding-left: 15px;
 }
+hr {
+	border: 0;
+	height: 1px;
+}
 
-/*------------------------------------------------------------------------
-# Pages
-------------------------------------------------------------------------*/
+/*-----------------------------------------------
+## Content
+-----------------------------------------------*/
 /* 404 Page */
 .error404 .list-group-item {
 	background: transparent;
 	border: none;
 }
+
+/* entry-content */
+.entry-content {
+	margin-top: 0;
+}
+.entry-content a {
+	text-decoration: underline;
+}
+.entry-content a.btn {
+    text-decoration: none !important;
+}
+.hentry {
+    margin: 0;
+}
+
+/* gallery */
+.gallery {
+	padding: 0;
+}
+
+/*-----------------------------------------------
+## Jumbotron
+-----------------------------------------------*/
+.jumbotron p {
+    margin-top: 30px;
+}
+.jumbotron {
+	margin-bottom: 30px;
+}
+
 /* Search Page */
 .search .jumbotron {
 	background: none;
+}
+.search-no-results .jumbotron {
+	padding-left: 0;
+}
+.search-no-results .container .jumbotron {
+	padding-left: 0;
 }
 
 /*------------------------------------------------------------------------
@@ -353,8 +331,14 @@ blockquote p {
 .post {
 	padding-bottom: 25px;
 }
+.panel-footer {
+	padding: 0px 15px 25px;
+	border-top: none;
+}
 
-/* Comments */
+/*-----------------------------------------------
+## Comments
+-----------------------------------------------*/
 .comment-form-comment label {
 	float: left;
 	padding-right: 15px;
@@ -363,8 +347,8 @@ blockquote p {
 	float: right;
 	text-decoration: underline;
 }
-.comment-reply-title a,
-.comment-meta a {
+.comment-meta a,
+.comment-reply-title a, {
 	text-decoration: underline;
 }
 #cancel-comment-reply-link:hover,
@@ -403,17 +387,10 @@ blockquote p {
 	padding: 25px;
 	margin-top: 25px;
 }
-.panel-footer {
-	padding: 0px 15px 25px;
-	border-top: none;
-}
 
-/* Buttons */
-.form-submit .submit {
-	margin-bottom: 10px;
-}
-
-/* Sidebar Widget Area */
+/*-----------------------------------------------
+## Sidebar Widgets
+-----------------------------------------------*/
 .widget-area {
 	margin-top: 25px;
 	padding: 25px;
@@ -438,12 +415,73 @@ aside.sidebar h2.widget-title {
     text-decoration: none;
 }
 
-/* Forms */
+/*-----------------------------------------------
+## Calendar Widget
+-----------------------------------------------*/
+#wp-calendar {
+	width: 100%; 
+}
+#wp-calendar caption { 
+	text-align: right; 
+	margin-top: 10px; 
+	margin-bottom: 15px; 
+}
+#wp-calendar thead th { 
+	padding-bottom: 10px; 
+}
+#wp-calendar tbody td { 
+	text-align: center; 
+	padding:8px;
+}
+#wp-calendar tfoot #next { 
+	text-align: right; 
+	text-decoration: underline; 
+}
+#wp-calendar tfoot #prev { 
+	padding-top: 10px; 
+	text-decoration: underline; 
+}
+.widget_calendar .table > tfoot > tr > td {
+	border-top: none;
+}
+.widget_calendar td, th {
+	border-bottom: none !important;
+}
+.table > thead > tr > th {
+    border-bottom: none;
+}
+td, th {
+    padding: 1.2rem 1.5rem;
+}
+dd {
+    margin-left: 4.2rem;
+    margin-bottom: 1.2rem;
+}
+dt {
+	margin-bottom:.5rem;
+}
+ul li,
+ol li {
+	line-height: 2.5;
+}
+code {
+    border-radius: 4px;
+}
+.cat-links a,
+.tags-links a {
+	line-height: 2;
+}
+
+/*-----------------------------------------------
+## Forms
+-----------------------------------------------*/
 .form-inline .form-control {
     margin-bottom: 6px;
 }
 
-/* Navigation */
+/*-----------------------------------------------
+## Post Navigation
+-----------------------------------------------*/
 .navbar-nav > li > a {
 	text-decoration: none;
 }
@@ -469,6 +507,14 @@ aside.sidebar h2.widget-title {
 .nav-previous a:focus {
 	text-decoration: none;
 }
+.navigation.posts-navigation {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*-----------------------------------------------
+## Sidebar Navigation
+-----------------------------------------------*/
 .sidebar .nav > li > a:focus, 
 .sidebar .nav > li > a:hover {
 	background: none transparent;
@@ -490,7 +536,9 @@ aside.sidebar h2.widget-title {
 	line-height: 1.6;
 }
 
-/* entry- */
+/*-----------------------------------------------
+## Post Meta Data
+-----------------------------------------------*/
 .entry-meta {
 	padding-bottom: 30px;
 }
@@ -507,60 +555,13 @@ aside.sidebar h2.widget-title {
 .entry-meta a:focus   {
 	text-decoration: none;
 }
-
-/* calendar widget */
-#wp-calendar {
-	width: 100%; 
-}
-#wp-calendar caption { 
-	text-align: right; 
-	margin-top: 10px; 
-	margin-bottom: 15px; 
-}
-#wp-calendar thead th { 
-	padding-bottom: 10px; 
-}
-#wp-calendar tbody td { 
-	text-align: center; 
-	padding:8px;
-}
-#wp-calendar tfoot #next { 
-	text-align: right; 
-	text-decoration: underline; 
-}
-#wp-calendar tfoot #prev { 
-	padding-top: 10px; 
-	text-decoration: underline; 
-}
-.table > thead > tr > th {
-    border-bottom: none;
-}
-td, th {
-    padding: 1.2rem 1.5rem;
-}
-.widget_calendar td, th {
-	border-bottom: none !important;
-}
-dd {
-    margin-left: 4.2rem;
-    margin-bottom: 1.2rem;
-}
-dt {
-	margin-bottom:.5rem;
-}
-ul li,
-ol li {
-	line-height: 2.5;
-}
-code {
-    border-radius: 4px;
-}
-.cat-links a,
-.tags-links a {
-	line-height: 2;
+a.url {
+	text-decoration: underline;
 }
 
-/* Other */
+/*-----------------------------------------------
+## Panels
+-----------------------------------------------*/
 .panel {
 	border: none !important;
 	box-shadow: none;
@@ -568,10 +569,10 @@ code {
 .panel-heading {
 	border-bottom: none !important;
 }
-.navigation.posts-navigation {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+
+/*-----------------------------------------------
+## Post Formats
+-----------------------------------------------*/
 .type-post.hentry {
     margin-bottom: 60px;
 }
@@ -582,38 +583,13 @@ code {
 .type-post h1.entry-title {
 	text-align: left !important;
 }
-.search-no-results .jumbotron {
-	padding-left: 0;
-}
-.search-no-results .container .jumbotron {
-	padding-left: 0;
-}
-.sidebar #searchform .button-primary {
-	padding: 0 !important;
-}
-.jumbotron p {
-    margin-top: 30px;
-}
-.jumbotron {
-	margin-bottom: 30px;
-}
-a.url {
-	text-decoration: underline;
-}
-
-/*------------------------------------------------------------------------
-# Plugins
-------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## WooCommerce
------------------------------------------------*/
 
 /*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-info {
 	margin-bottom: -10px;
+	text-align: center;
 }
 .footer-center-items {
 	padding-left: 0;
@@ -623,48 +599,24 @@ a.url {
 }
 .attribution {
 	padding-bottom: 30px;
+	text-align: center;
 }
 footer aside.widget {
     padding-bottom: 0 !important;
 }
-
-/* Custom */
-.site-title a {
-	float: right;
-}
-.site-description {
-    float: right;
-    clear: both;
-    display: none;
-}
-.site-header {
-    padding-bottom: 20px;
-}
 .site-footer {
-    padding: 20px 0; 
+    padding: 0 0 20px;
+    text-align: center;
 }
-.entry-content {
-	margin-top: 0;
-}
-.entry-content a {
-	text-decoration: underline;
-}
-.entry-content a.btn {
-    text-decoration: none !important;
-}
-.widget_calendar .table > tfoot > tr > td {
-	border-top: none;
-}
+
+/*------------------------------------------------------------------------
+# Custom
+------------------------------------------------------------------------*/
 .colored-bg {
 	padding-left: 0;
 	padding-right: 0;
 }
-.bg-box {
-	height: 100%;
-}
-.hentry {
-    margin: 0;
-}
-.gallery {
-	padding: 0;
+.call-to-action h2,
+.call-to-action h4 {
+	line-height: 1.2em !important;
 }
