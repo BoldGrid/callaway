@@ -156,7 +156,7 @@
 	}
 	code {
 		background-color: $palette-primary_2;
-	    color: $text-contrast-palette-primary_2;
+		color: $text-contrast-palette-primary_2;
 	}
 	.entry-footer {
 		background-color: $palette-primary_3;
@@ -177,12 +177,12 @@
 		border-left: 5px solid $palette-primary_4;
 	}
 	td, th {
-	    border-bottom: 0.1rem solid $palette-primary_4;
+		border-bottom: 0.1rem solid $palette-primary_4;
 	}
 	pre {
-	    color: $text-contrast-palette-primary_4;
-	    background-color: $palette-primary_4;
-	    border: 1px solid $palette-primary_3;
+		color: $text-contrast-palette-primary_4;
+		background-color: $palette-primary_4;
+		border: 1px solid $palette-primary_3;
 	}
 	#wp-calendar tbody td:hover{ 
 		background: $palette-primary_4; 
@@ -226,7 +226,7 @@
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
 		color: $text-contrast-palette-primary_4;
-	    background: $palette-primary_4;
+		background: $palette-primary_4;
 	}
 	
 	/*-----------------------------------------------

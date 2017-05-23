@@ -109,10 +109,10 @@ a:focus,
 	float: right;
 }
 .site-description {
-    float: right;
-    clear: both;
-    display: none;
-    text-align: center;
+	float: right;
+	clear: both;
+	display: none;
+	text-align: center;
 }
 .post-title-hidden .entry-meta {
 	margin-top: 50px;
@@ -130,7 +130,7 @@ a:focus,
 # Header
 ------------------------------------------------------------------------*/
 .site-header {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 /*------------------------------------------------------------------------
@@ -284,7 +284,7 @@ ol li {
 	line-height: 2.5;
 }
 code {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 /*-----------------------------------------------
@@ -304,7 +304,7 @@ code {
 	text-decoration: underline;
 }
 .hentry {
-    margin: 0;
+	margin: 0;
 }
 
 /* gallery */
@@ -316,7 +316,7 @@ code {
 ## Jumbotron
 -----------------------------------------------*/
 .jumbotron p {
-    margin-top: 30px;
+	margin-top: 30px;
 }
 .jumbotron {
 	margin-bottom: 30px;
@@ -381,9 +381,9 @@ code {
 }
 .widget ul#recentcomments > li::before {
 	font-family: 'FontAwesome';
-    font-size: 1.2rem;
-    padding-right: 1rem;
-    content: "\f04b";
+	font-size: 1.2rem;
+	padding-right: 1rem;
+	content: "\f04b";
 }
 .widget ul#recentcomments > li {
 	line-height: 1.6;
@@ -412,15 +412,15 @@ aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
 }
 .widget {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 .tagcloud a {
-    line-height: 28px;
-    text-decoration: underline;
+	line-height: 28px;
+	text-decoration: underline;
 }
 .tagcloud a:hover,
 .tagcloud a:focus {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /*-----------------------------------------------
@@ -456,14 +456,14 @@ aside.sidebar h2.widget-title {
 	border-bottom: none !important;
 }
 .table > thead > tr > th {
-    border-bottom: none;
+	border-bottom: none;
 }
 td, th {
-    padding: 1.2rem 1.5rem;
+	padding: 1.2rem 1.5rem;
 }
 dd {
-    margin-left: 4.2rem;
-    margin-bottom: 1.2rem;
+	margin-left: 4.2rem;
+	margin-bottom: 1.2rem;
 }
 dt {
 	margin-bottom:.5rem;
@@ -473,7 +473,7 @@ dt {
 ## Forms
 -----------------------------------------------*/
 .form-inline .form-control {
-    margin-bottom: 6px;
+	margin-bottom: 6px;
 }
 
 /*-----------------------------------------------
@@ -485,8 +485,8 @@ dt {
 .nav-next,
 .nav-previous {
 	margin-bottom: 25px;
-    padding: 8px 30px;
-    transition: all 0.5s ease 0s;
+	padding: 8px 30px;
+	transition: all 0.5s ease 0s;
 }
 .nav-previous {
 	float: left;
@@ -496,7 +496,7 @@ dt {
 }
 .nav-next a,
 .nav-previous a {
-    text-decoration: none;
+	text-decoration: none;
 }
 .nav-next a:hover,
 .nav-next a:focus,
@@ -505,8 +505,8 @@ dt {
 	text-decoration: none;
 }
 .navigation.posts-navigation {
-    margin-top: 25px;
-    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 /*-----------------------------------------------
@@ -518,11 +518,11 @@ dt {
 	text-decoration: none;
 }
 .sidebar .nav > li::before {
-    font-family: 'FontAwesome';
-    font-size: 1.2rem;
-    padding-right: 1rem;
-    content: "\f04b";
-    float: left;
+	font-family: 'FontAwesome';
+	font-size: 1.2rem;
+	padding-right: 1rem;
+	content: "\f04b";
+	float: left;
 	padding-top: 10px;
 }
 .sidebar .nav > li > a {
@@ -571,11 +571,11 @@ a.url {
 ## Post Formats
 -----------------------------------------------*/
 .type-post.hentry {
-    margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 .type-post h1.entry-title a {
-    padding: 0 !important;
-    margin-left: -15px;
+	padding: 0 !important;
+	margin-left: -15px;
 }
 .type-post h1.entry-title {
 	text-align: left !important;
@@ -599,11 +599,11 @@ a.url {
 	text-align: center;
 }
 footer aside.widget {
-    padding-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 .site-footer {
-    padding: 0 0 20px;
-    text-align: center;
+	padding: 0 0 20px;
+	text-align: center;
 }
 
 /*------------------------------------------------------------------------
