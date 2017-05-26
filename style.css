@@ -111,7 +111,6 @@ a:focus,
 .site-description {
 	float: right;
 	clear: both;
-	display: none;
 	text-align: center;
 }
 .post-title-hidden .entry-meta {
