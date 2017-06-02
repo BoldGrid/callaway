@@ -155,6 +155,12 @@ a:focus,
 	margin-left: -15px;
 	padding-top: 25px;
 }
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background: none;
+  border: none; 
+}
 
 /* navbar links */
 .navbar-default .navbar-nav > li > a {
@@ -407,6 +413,13 @@ code {
 	padding: 20px 12px;
 	margin-bottom: 25px;
 }
+.sidebar a {
+    text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a:focus {
+    text-decoration: none;
+}
 aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
 }
@@ -615,4 +628,15 @@ footer aside.widget {
 .call-to-action h2,
 .call-to-action h4 {
 	line-height: 1.2em !important;
+}
+
+/* WooCommerce */
+.woocommerce div.product .woocommerce-tabs .panel {
+  padding: 20px;
+}
+.nav-tabs {
+  border: none;
+}
+.woocommerce div.product .product_title {
+  text-align: left;
 }

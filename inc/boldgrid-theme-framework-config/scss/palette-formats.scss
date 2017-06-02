@@ -2,8 +2,8 @@
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
-	background: $palette-primary_3;
-	color: $text-contrast-palette-primary_3;
+	background: $palette-primary-neutral-color;
+	color: $text-contrast-palette-primary-neutral-color;
 
 	/*-----------------------------------------------
 	## 1
@@ -29,12 +29,10 @@
 	.navbar-default .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
-	.sidebar a,
 	.sidebar .nav > li > a,
 	.sidebar .nav > li::before,
 	.heading-alt,
 	.link-primary,
-	.link-secondary,
 	.media-heading a.url,
 	.site-footer a,
 	#menu-social li a,
@@ -95,6 +93,7 @@
 	h6,
 	a.url,
 	caption,
+  .link-secondary,
 	.entry-footer .cat-links > a,
 	.entry-footer .tags-links > a {
 		color: $palette-primary_2;
@@ -108,6 +107,10 @@
 	.widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
 		background: $palette-primary_3;
 		border: 1px solid $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	code {
+		background-color: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 	.comments,
@@ -140,6 +143,7 @@
 	.panel-footer,
 	#wp-calendar tbody .pad {
 		background: $palette-primary_2;
+    color: $text-contrast-palette-primary_2;
 	}
 
 	/* Custom */
@@ -150,24 +154,20 @@
 	/*-----------------------------------------------
 	## 3
 	-----------------------------------------------*/
-	aside.sidebar h2.widget-title {
-		border-bottom: 1px solid $palette-primary_3;
-		color: $palette-primary_5;
+	.navbar-default .navbar-toggle .icon-bar {
+		background: $text-contrast-palette-primary_3;
 	}
-	code {
-		background-color: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
+	.site-title a,
+	.site-description,
+	.navbar-default .navbar-text,
+	.navbar-default .navbar-nav > li > a {
+		color: $palette-primary_3;
 	}
-	.entry-footer {
-		background-color: $palette-primary_3;
-	}
-	.entry-footer a {
-		background: $palette-primary_3;
-		color: $text-contrast-palette-primary_3;
-	}
-	.navbar-default .navbar-toggle {
-		background: $palette-primary_3;
-		border-color: $palette-primary_3;
+
+	/* Custom */
+	.call-to-action h2,
+	.call-to-action h4 {
+		color: $palette-primary_3;
 	}
 
 	/*-----------------------------------------------
@@ -175,9 +175,6 @@
 	-----------------------------------------------*/
 	blockquote {
 		border-left: 5px solid $palette-primary_4;
-	}
-	td, th {
-		border-bottom: 0.1rem solid $palette-primary_4;
 	}
 	pre {
 		color: $text-contrast-palette-primary_4;
@@ -199,6 +196,8 @@
 	#secondary-menu a[href]:hover,
 	#tertiary-menu a[href]:hover,
 	#footer-center-menu a[href]:hover,
+  .sidebar a:hover,
+  .sidebar a:focus,
 	.sidebar .nav > li > a:focus, 
 	.sidebar .nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:hover,
@@ -243,21 +242,71 @@
 	/*-----------------------------------------------
 	## Neutral
 	-----------------------------------------------*/
-	.navbar-default .navbar-toggle .icon-bar {
-		background: $text-contrast-palette-primary-neutral-color;
+	aside.sidebar h2.widget-title {
+		border-bottom: 1px solid $palette-primary_5;
+		color: $palette-primary_5;
 	}
-	.site-title a,
-	.site-description,
-	.navbar-default .navbar-text,
-	.navbar-default .navbar-nav > li > a {
-		color: $palette-primary-neutral-color;
+	.entry-footer {
+		background-color: $palette-primary-neutral-color;
+	}
+	.entry-footer a {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.navbar-default .navbar-toggle {
+		background: $palette-primary-neutral-color;
+		border-color: $palette-primary-neutral-color;
 	}
 
-	/* Custom */
-	.call-to-action h2,
-	.call-to-action h4 {
-		color: $palette-primary-neutral-color;
+	/*-----------------------------------------------
+	## Woocommerce
+	-----------------------------------------------*/
+	.mini_cart_item > span,
+	.total {
+		color: $palette-primary_1;
 	}
+	.panel {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2; 
+	}
+	.panel h2,
+	#reviews #comments ol.commentlist li .meta,
+	.widget_shopping_cart_content {
+		color: $text-contrast-palette-primary_2;
+	}
+	#reviews #comments ol.commentlist li .comment-text {
+		border: 1px solid $text-contrast-palette-primary_2;
+	}
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:focus, 
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li > a:hover {
+		border: 1px solid $palette-primary_2;
+	}
+	.woocommerce-MyAccount-navigation-link a {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	mark {
+ 		background: $palette-primary_1;
+ 		color: $text-contrast-palette-primary_1;
+ 	}
+ 	&.woocommerce p.price.color2-color {
+		color: $palette-primary_1 !important;
+	}
+	&.woocommerce .color2-background-color {
+    background-color: $palette-primary_1 !important;
+  }
+  &.woocommerce .color-2-text-contrast {
+    color: $text-contrast-palette-primary_1 !important;
+  }
+  &.woocommerce .widget_price_filter .price_slider_amount {
+    color: $text-contrast-palette-primary_2;
+  }
+  .product-categories a,
+  .product-list-widget a span.product-title {
+    color: $palette-primary_1;
+  }
+
 }
 
 .palette-primary.disabled-footer .site-footer {
