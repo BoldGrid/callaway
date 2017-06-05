@@ -29,13 +29,13 @@
 	.navbar-default .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
-  #header-widget-area .nav > li > a:hover,
-  #footer-widget-area .nav > li > a:hover {
-    background: $palette-primary_1;
-    color: $text-contrast-palette-primary_1;
-  }
-  a,
-  .widget a,
+	#header-widget-area .nav > li > a:hover,
+	#footer-widget-area .nav > li > a:hover {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	a,
+	.widget a,
 	.sidebar .nav > li > a,
 	.sidebar .nav > li::before,
 	.heading-alt,
@@ -98,15 +98,15 @@
 	h6,
 	a.url,
 	caption,
-  .link-secondary,
+	.link-secondary,
 	.entry-footer .cat-links > a,
 	.entry-footer .tags-links > a {
 		color: $palette-primary_2;
 	}
-  .header-widget-area h2,
-  input.with-font[type="checkbox"] ~ label::before {
-    color: $text-contrast-palette-primary_2;
-  }
+	.header-widget-area h2,
+	input.with-font[type="checkbox"] ~ label::before {
+		color: $text-contrast-palette-primary_2;
+	}
 	hr {
 		background: $text-contrast-palette-primary_2;
 	}
@@ -151,7 +151,7 @@
 	.panel-footer,
 	#wp-calendar tbody .pad {
 		background: $palette-primary_2;
-    color: $text-contrast-palette-primary_2;
+		color: $text-contrast-palette-primary_2;
 	}
 
 	/* Custom */
@@ -245,9 +245,9 @@
 	## Neutral
 	-----------------------------------------------*/
 	hr {
-    background: $text-contrast-palette-primary-neutral-color;
-  }
-  aside.sidebar h2.widget-title {
+		background: $text-contrast-palette-primary-neutral-color;
+	}
+	aside.sidebar h2.widget-title {
 		border-bottom: 1px solid $palette-primary_5;
 		color: $palette-primary_5;
 	}
@@ -292,25 +292,25 @@
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	mark {
- 		background: $palette-primary_1;
- 		color: $text-contrast-palette-primary_1;
- 	}
- 	&.woocommerce p.price.color2-color {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	&.woocommerce p.price.color2-color {
 		color: $palette-primary_1 !important;
 	}
 	&.woocommerce .color2-background-color {
-    background-color: $palette-primary_1 !important;
-  }
-  &.woocommerce .color-2-text-contrast {
-    color: $text-contrast-palette-primary_1 !important;
-  }
-  &.woocommerce .widget_price_filter .price_slider_amount {
-    color: $text-contrast-palette-primary_2;
-  }
-  .woocommerce .star-rating::before,
-  .product-list-widget a span.product-title {
-    color: $palette-primary_1;
-  }
+		background-color: $palette-primary_1 !important;
+	}
+	&.woocommerce .color-2-text-contrast {
+		color: $text-contrast-palette-primary_1 !important;
+	}
+	&.woocommerce .widget_price_filter .price_slider_amount {
+		color: $text-contrast-palette-primary_2;
+	}
+	.woocommerce .star-rating::before,
+	.product-list-widget a span.product-title {
+		color: $palette-primary_1;
+	}
 
 }
 

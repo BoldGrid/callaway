@@ -157,8 +157,8 @@ a:focus,
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
-  background: none;
-  border: none; 
+	background: none;
+	border: none; 
 }
 
 /* navbar links */
@@ -413,11 +413,11 @@ code {
 	margin-bottom: 25px;
 }
 .sidebar a {
-    text-decoration: underline;
+		text-decoration: underline;
 }
 .sidebar a:hover,
 .sidebar a:focus {
-    text-decoration: none;
+		text-decoration: none;
 }
 aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
@@ -584,7 +584,7 @@ a.url {
 .type-post h1.entry-title a {
 	padding: 0 !important;
 	margin-left: -15px;
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
 .type-post h1.entry-title {
 	text-align: left !important;
@@ -609,17 +609,17 @@ a.url {
 }
 footer aside.widget {
 	padding-bottom: 0 !important;
-  text-align: left;
+	text-align: left;
 }
 footer aside.widget a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .site-footer {
 	padding: 0 0 20px;
 	text-align: center;
 }
 .site-footer .textwidget p {
-  text-align: center;
+	text-align: center;
 }
 
 
@@ -637,11 +637,11 @@ footer aside.widget a {
 
 /* WooCommerce */
 .woocommerce div.product .woocommerce-tabs .panel {
-  padding: 20px;
+	padding: 20px;
 }
 .nav-tabs {
-  border: none;
+	border: none;
 }
 .woocommerce div.product .product_title {
-  text-align: left;
+	text-align: left;
 }
