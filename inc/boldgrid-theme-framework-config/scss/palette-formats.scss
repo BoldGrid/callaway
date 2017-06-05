@@ -29,6 +29,13 @@
 	.navbar-default .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
+  #header-widget-area .nav > li > a:hover,
+  #footer-widget-area .nav > li > a:hover {
+    background: $palette-primary_1;
+    color: $text-contrast-palette-primary_1;
+  }
+  a,
+  .widget a,
 	.sidebar .nav > li > a,
 	.sidebar .nav > li::before,
 	.heading-alt,
@@ -84,9 +91,7 @@
 	/*-----------------------------------------------
 	## 2
 	-----------------------------------------------*/
-	a,
 	h1,
-	h2,
 	h3,
 	h4,
 	h5,
@@ -98,6 +103,10 @@
 	.entry-footer .tags-links > a {
 		color: $palette-primary_2;
 	}
+  .header-widget-area h2,
+  input.with-font[type="checkbox"] ~ label::before {
+    color: $text-contrast-palette-primary_2;
+  }
 	hr {
 		background: $text-contrast-palette-primary_2;
 	}
@@ -122,7 +131,6 @@
 	.cat-item-none,
 	.logged-in-as a,
 	#wp-calendar #today,
-	.widget ul#recentcomments > li,
 	.comments-area .comment-content p {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
@@ -196,14 +204,8 @@
 	#secondary-menu a[href]:hover,
 	#tertiary-menu a[href]:hover,
 	#footer-center-menu a[href]:hover,
-  .sidebar a:hover,
-  .sidebar a:focus,
-	.sidebar .nav > li > a:focus, 
-	.sidebar .nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
-	.widget ul#recentcomments > li > a:hover,
-	.widget ul#recentcomments > li > a:focus,
 	.widget ul#recentcomments > li > span > a:hover,
 	.widget ul#recentcomments > li > span > a:focus {
 		color: $palette-primary_4;
@@ -242,7 +244,10 @@
 	/*-----------------------------------------------
 	## Neutral
 	-----------------------------------------------*/
-	aside.sidebar h2.widget-title {
+	hr {
+    background: $text-contrast-palette-primary-neutral-color;
+  }
+  aside.sidebar h2.widget-title {
 		border-bottom: 1px solid $palette-primary_5;
 		color: $palette-primary_5;
 	}
@@ -302,7 +307,7 @@
   &.woocommerce .widget_price_filter .price_slider_amount {
     color: $text-contrast-palette-primary_2;
   }
-  .product-categories a,
+  .woocommerce .star-rating::before,
   .product-list-widget a span.product-title {
     color: $palette-primary_1;
   }

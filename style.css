@@ -100,7 +100,6 @@ a:focus,
 }
 .entry-title a {
 	padding: 0 15px;
-	text-transform: lowercase;
 }
 .site-title {
 	text-align: center;
@@ -582,12 +581,10 @@ a.url {
 /*-----------------------------------------------
 ## Post Formats
 -----------------------------------------------*/
-.type-post.hentry {
-	margin-bottom: 60px;
-}
 .type-post h1.entry-title a {
 	padding: 0 !important;
 	margin-left: -15px;
+  text-transform: capitalize;
 }
 .type-post h1.entry-title {
 	text-align: left !important;
@@ -612,11 +609,19 @@ a.url {
 }
 footer aside.widget {
 	padding-bottom: 0 !important;
+  text-align: left;
+}
+footer aside.widget a {
+  text-decoration: none;
 }
 .site-footer {
 	padding: 0 0 20px;
 	text-align: center;
 }
+.site-footer .textwidget p {
+  text-align: center;
+}
+
 
 /*------------------------------------------------------------------------
 # Custom
