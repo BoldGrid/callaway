@@ -1,4 +1,10 @@
 /*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$lighten1: lighten($palette-primary_1, 5%);
+$lighten2: lighten($palette-primary_2, 5%);
+
+/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -29,8 +35,8 @@
 	.navbar-default .dropdown-menu > li > a {
 		color: $text-contrast-palette-primary_1;
 	}
-	#header-widget-area .nav > li > a:hover,
-	#footer-widget-area .nav > li > a:hover {
+  .nav > li > a:focus,
+  .nav > li > a:hover {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -40,13 +46,10 @@
 	.sidebar .nav > li::before,
 	.heading-alt,
 	.link-primary,
-	.media-heading a.url,
 	.site-footer a,
 	#menu-social li a,
 	#wp-calendar caption,
 	#wp-calendar tbody,
-	#wp-calendar tfoot #next,
-	#wp-calendar tfoot #prev,
 	.comment-meta a:hover,
 	.comment-meta a:focus,
 	.comment-reply-title a:hover,
@@ -78,9 +81,6 @@
 	.navbar-default .navbar-nav .dropdown-menu {
 		background: $palette-primary_1;
 	}
-	.widget-area {
-		border: 1px solid $text-contrast-palette-primary_1;
-	}
 	
 	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -96,21 +96,19 @@
 	h4,
 	h5,
 	h6,
-	a.url,
 	caption,
 	.link-secondary,
 	.entry-footer .cat-links > a,
-	.entry-footer .tags-links > a {
+	.entry-footer .tags-links > a,
+	.entry-title a {
 		color: $palette-primary_2;
 	}
 	.header-widget-area h2,
 	input.with-font[type="checkbox"] ~ label::before {
 		color: $text-contrast-palette-primary_2;
 	}
-	hr {
-		background: $text-contrast-palette-primary_2;
-	}
-	.post {
+	.post,
+  .table > thead > tr > th {
 		border-bottom: 1px solid $palette-primary_2;
 	}
 	.widget .table-striped > tbody > tr:nth-child(2n+1) > td  {
@@ -124,12 +122,10 @@
 	}
 	.comments,
 	.comment-meta a,
-	.comments-title,
 	.site-footer,
 	.panel-heading,
 	.media-heading,
 	.cat-item-none,
-	.logged-in-as a,
 	#wp-calendar #today,
 	.comments-area .comment-content p {
 		background: $palette-primary_2;
@@ -193,6 +189,9 @@
 		background: $palette-primary_4; 
 		color: $text-contrast-palette-primary_4; 
 	}
+  #wp-calendar tbody td a {
+    color: $palette-primary_2;
+  }
 	.nav-next:hover,
 	.nav-previous:hover {
 		background: $palette-primary_4;
@@ -206,6 +205,7 @@
 	#footer-center-menu a[href]:hover,
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a:active,
 	.widget ul#recentcomments > li > span > a:hover,
 	.widget ul#recentcomments > li > span > a:focus {
 		color: $palette-primary_4;
@@ -262,6 +262,11 @@
 		background: $palette-primary-neutral-color;
 		border-color: $palette-primary-neutral-color;
 	}
+  .well {
+    background: $palette-primary-neutral-color;
+    border: $palette-primary-neutral-color;
+    color: $text-contrast-palette-primary-neutral-color;
+  }
 
 	/*-----------------------------------------------
 	## Woocommerce
@@ -275,8 +280,7 @@
 		color: $text-contrast-palette-primary_2; 
 	}
 	.panel h2,
-	#reviews #comments ol.commentlist li .meta,
-	.widget_shopping_cart_content {
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary_2;
 	}
 	#reviews #comments ol.commentlist li .comment-text {
@@ -304,14 +308,31 @@
 	&.woocommerce .color-2-text-contrast {
 		color: $text-contrast-palette-primary_1 !important;
 	}
-	&.woocommerce .widget_price_filter .price_slider_amount {
-		color: $text-contrast-palette-primary_2;
-	}
-	.woocommerce .star-rating::before,
-	.product-list-widget a span.product-title {
+	.woocommerce .star-rating::before {
 		color: $palette-primary_1;
 	}
 
+  /*-----------------------------------------------
+  ## Buttons
+  -----------------------------------------------*/
+  .button-primary {
+    background-color: $palette-primary_1;
+    color: $text-contrast-palette-primary_1;
+  }
+  .button-secondary {
+    background-color: $palette-primary_2;
+    color: $text-contrast-palette-primary_2;
+  }
+  .button-primary:hover,
+  .button-primary:focus {
+    background-color: $lighten1;
+    color: $text-contrast-palette-primary_1;
+  }
+  .button-secondary:hover,
+  .button-secondary:focus {
+    background-color: $lighten2;
+    color: $text-contrast-palette-primary_2;
+  }
 }
 
 .palette-primary.disabled-footer .site-footer {

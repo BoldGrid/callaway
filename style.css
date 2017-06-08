@@ -49,8 +49,12 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
 	line-height: 1.2em;
 }
 p {
@@ -82,34 +86,14 @@ a:focus,
 ## Titles
 -----------------------------------------------*/
 .entry-title {
-	display: block;
 	margin: 40px 0;
-	position: relative;
 	text-align: center;
-	z-index: 1;
-}
-.entry-title::before {
-	bottom: 0;
-	content:"";
-	left: 0;
-	margin: 0 auto;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	z-index: -1;
 }
 .entry-title a {
 	padding: 0 15px;
 }
-.site-title {
-	text-align: center;
-}
-.site-title a {
-	float: right;
-}
+.site-title,
 .site-description {
-	float: right;
-	clear: both;
 	text-align: center;
 }
 .post-title-hidden .entry-meta {
@@ -120,7 +104,7 @@ a:focus,
 @media only screen and (min-width: 992px) {
 	.site-title,
 	.site-description {
-		text-align: left;
+		text-align: right;
 	}
 }
 
@@ -139,12 +123,8 @@ a:focus,
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background-color: none;
 	border: none;
 	min-height: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
 }
 .navbar-default {
 	background: none;
@@ -159,6 +139,11 @@ a:focus,
 .nav .open > a:hover {
 	background: none;
 	border: none; 
+}
+.navbar-default .navbar-nav > .active > a,
+#primary-navbar .navbar-nav > li > a:hover,
+#primary-navbar .navbar-nav > li > a:focus {
+  background: none;
 }
 
 /* navbar links */
@@ -216,7 +201,6 @@ a:focus,
 }
 #secondary-menu,
 #tertiary-menu {
-	background: none;
 	text-align: center;
 }
 .footer-center-menu {
@@ -260,8 +244,6 @@ a:focus,
 @media only screen and (min-width: 768px) {
 	.menu-social {
 		margin-top: 15px;
-		padding-left: 5px;
-		padding-right: 15px;
 	}
 }
 
@@ -330,9 +312,6 @@ code {
 .search .jumbotron {
 	background: none;
 }
-.search-no-results .jumbotron {
-	padding-left: 0;
-}
 .search-no-results .container .jumbotron {
 	padding-left: 0;
 }
@@ -351,24 +330,16 @@ code {
 /*-----------------------------------------------
 ## Comments
 -----------------------------------------------*/
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 #cancel-comment-reply-link {
 	float: right;
 	text-decoration: underline;
 }
 .comment-meta a,
-.comment-reply-title a, {
+.comment-reply-title a {
 	text-decoration: underline;
 }
 #cancel-comment-reply-link:hover,
-#cancel-comment-reply-link:focus,
-.comment-reply-title a:hover,
-.comment-reply-title a:focus,
-.comment-meta a:hover,
-.comment-meta a:focus {
+#cancel-comment-reply-link:focus {
 	text-decoration: none;
 }
 .widget ul#recentcomments > li > a:hover,
@@ -403,43 +374,38 @@ code {
 /*-----------------------------------------------
 ## Sidebar Widgets
 -----------------------------------------------*/
-.widget-area {
-	margin-top: 25px;
-	padding: 25px;
-	list-style:none;
-}
 .sidebar {
 	padding: 20px 12px;
 	margin-bottom: 25px;
 }
 .sidebar a {
-		text-decoration: underline;
+	text-decoration: underline;
 }
 .sidebar a:hover,
 .sidebar a:focus {
-		text-decoration: none;
+	text-decoration: none;
 }
 aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
 }
 .widget {
+	margin-top: 20px;
 	padding-bottom: 20px;
 }
 .tagcloud a {
-	line-height: 28px;
 	text-decoration: underline;
 }
 .tagcloud a:hover,
 .tagcloud a:focus {
 	text-decoration: none;
 }
+.cat-item-none:before {
+	display:none;
+}
 
 /*-----------------------------------------------
 ## Calendar Widget
 -----------------------------------------------*/
-#wp-calendar {
-	width: 100%; 
-}
 #wp-calendar caption { 
 	text-align: right; 
 	margin-top: 10px; 
@@ -449,25 +415,16 @@ aside.sidebar h2.widget-title {
 	padding-bottom: 10px; 
 }
 #wp-calendar tbody td { 
-	text-align: center; 
-	padding:8px;
+	text-align: center;
 }
 #wp-calendar tfoot #next { 
 	text-align: right; 
-	text-decoration: underline; 
 }
 #wp-calendar tfoot #prev { 
-	padding-top: 10px; 
-	text-decoration: underline; 
+	padding-top: 10px;  
 }
 .widget_calendar .table > tfoot > tr > td {
 	border-top: none;
-}
-.widget_calendar td, th {
-	border-bottom: none !important;
-}
-.table > thead > tr > th {
-	border-bottom: none;
 }
 td, th {
 	padding: 1.2rem 1.5rem;
@@ -483,9 +440,6 @@ dt {
 /*-----------------------------------------------
 ## Forms
 -----------------------------------------------*/
-.form-inline .form-control {
-	margin-bottom: 6px;
-}
 
 /*-----------------------------------------------
 ## Post Navigation
@@ -505,16 +459,6 @@ dt {
 .nav-next {
 	float: right;
 }
-.nav-next a,
-.nav-previous a {
-	text-decoration: none;
-}
-.nav-next a:hover,
-.nav-next a:focus,
-.nav-previous a:hover,
-.nav-previous a:focus {
-	text-decoration: none;
-}
 .navigation.posts-navigation {
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -523,12 +467,12 @@ dt {
 /*-----------------------------------------------
 ## Sidebar Navigation
 -----------------------------------------------*/
-.sidebar .nav > li > a:focus, 
-.sidebar .nav > li > a:hover {
+.sidebar .widget .nav > li > a:focus, 
+.sidebar .widget .nav > li > a:hover {
 	background: none transparent;
 	text-decoration: none;
 }
-.sidebar .nav > li::before {
+.sidebar .widget .nav > li::before {
 	font-family: 'FontAwesome';
 	font-size: 1.2rem;
 	padding-right: 1rem;
@@ -536,11 +480,11 @@ dt {
 	float: left;
 	padding-top: 10px;
 }
-.sidebar .nav > li > a {
+.sidebar .widget .nav > li > a {
 	padding: 8px 0;
 	text-decoration: underline;
 }
-.sidebar .nav > li {
+.sidebar .widget .nav > li {
 	line-height: 1.6;
 }
 
@@ -571,23 +515,22 @@ a.url {
 ## Panels
 -----------------------------------------------*/
 .panel {
-	border: none !important;
+	border: none;
 	box-shadow: none;
 }
 .panel-heading {
-	border-bottom: none !important;
+	border-bottom: none;
 }
 
 /*-----------------------------------------------
 ## Post Formats
 -----------------------------------------------*/
-.type-post h1.entry-title a {
-	padding: 0 !important;
+.blog h1.entry-title a {
+	padding: 0;
 	margin-left: -15px;
-	text-transform: capitalize;
 }
-.type-post h1.entry-title {
-	text-align: left !important;
+.blog h1.entry-title {
+	text-align: left;
 }
 
 /*------------------------------------------------------------------------
@@ -608,7 +551,6 @@ a.url {
 	text-align: center;
 }
 footer aside.widget {
-	padding-bottom: 0 !important;
 	text-align: left;
 }
 footer aside.widget a {
@@ -622,17 +564,12 @@ footer aside.widget a {
 	text-align: center;
 }
 
-
 /*------------------------------------------------------------------------
 # Custom
 ------------------------------------------------------------------------*/
 .colored-bg {
 	padding-left: 0;
 	padding-right: 0;
-}
-.call-to-action h2,
-.call-to-action h4 {
-	line-height: 1.2em !important;
 }
 
 /* WooCommerce */
