@@ -143,7 +143,7 @@ a:focus,
 .navbar-default .navbar-nav > .active > a,
 #primary-navbar .navbar-nav > li > a:hover,
 #primary-navbar .navbar-nav > li > a:focus {
-  background: none;
+	background: none;
 }
 
 /* navbar links */
@@ -254,11 +254,13 @@ a:focus,
 /*-----------------------------------------------
 ## Global
 -----------------------------------------------*/
-blockquote {
+blockquote,
+.mod-blockquote {
 	padding-bottom: 0;
 	padding-top: 0;
 }
-blockquote p {
+blockquote p,
+.mod-blockquote p {
 	padding-left: 15px;
 }
 hr {
@@ -315,11 +317,22 @@ code {
 .search-no-results .container .jumbotron {
 	padding-left: 0;
 }
+.search a {
+	text-decoration: underline;
+}
+.search a:hover,
+.search a:focus {
+	text-decoration: none;
+}
+.search #content {
+	padding: 0 15px;
+}
 
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.post {
+.post,
+.page {
 	padding-bottom: 25px;
 }
 .panel-footer {
