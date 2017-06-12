@@ -22,11 +22,17 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus {
 		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 	.nav-next,
 	.nav-previous {
 		background-color: $palette-primary_1;
 		border: 1px solid $palette-primary_3;
+	}
+	.pager li > a {
+		background-color: $palette-primary_1;
+		border: 1px solid $palette-primary_3;
+		color: $text-contrast-palette-primary_1;
 	}
 	.nav-next a,
 	.nav-previous a,
@@ -148,6 +154,18 @@ $lighten2: lighten($palette-primary_2, 5%);
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a  {
+		color: $text-contrast-palette-primary_2;
+		background: $palette-primary_2;
+	}
+	hr.color5-color {
+		background: $text-contrast-palette-primary_2 !important;
+	}
 
 	/* Custom */
 	.colored-bg {
@@ -185,7 +203,9 @@ $lighten2: lighten($palette-primary_2, 5%);
 		background-color: $palette-primary_4;
 		border: 1px solid $palette-primary_3;
 	}
-	#wp-calendar tbody td:hover{ 
+	#wp-calendar tbody td:hover,
+	.pager li > a:hover,
+	.pager li > a:focus { 
 		background: $palette-primary_4; 
 		color: $text-contrast-palette-primary_4; 
 	}
@@ -220,19 +240,21 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:focus {
 		color: $text-contrast-palette-primary_4;
 	}
-	.navbar-default .navbar-nav > .open > a,
-	.navbar-default .navbar-nav > .open > a:hover,
-	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus  {
-		color: $text-contrast-palette-primary_4;
-		background: $palette-primary_4;
+	.navbar-default .navbar-nav > .current-menu-parent > a:hover,
+	.navbar-default .navbar-nav > .current-menu-parent > a:focus {
+		background: none;
+		color: $palette-primary_4;
 	}
 	
 	/*-----------------------------------------------
 	## 5
 	-----------------------------------------------*/
+	aside.sidebar h2.widget-title {
+		border-bottom: 1px solid $palette-primary_5;
+		color: $palette-primary_5;
+	}
+	
 	/* Custom */
 	.colored-bg h2,
 	.colored-bg h3,
@@ -247,10 +269,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	hr {
 		background: $text-contrast-palette-primary-neutral-color;
 	}
-	aside.sidebar h2.widget-title {
-		border-bottom: 1px solid $palette-primary_5;
-		color: $palette-primary_5;
-	}
 	.entry-footer {
 		background-color: $palette-primary-neutral-color;
 	}
@@ -261,6 +279,7 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.navbar-default .navbar-toggle {
 		background: $palette-primary-neutral-color;
 		border-color: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.well {
 		background: $palette-primary-neutral-color;
@@ -308,8 +327,14 @@ $lighten2: lighten($palette-primary_2, 5%);
 	&.woocommerce .color-2-text-contrast {
 		color: $text-contrast-palette-primary_1 !important;
 	}
-	.woocommerce .star-rating::before {
+	&.woocommerce .star-rating::before {
 		color: $palette-primary_1;
+	}
+	&.woocommerce .pagination > .active > span.color1-background-color {
+		background-color: $palette-primary_2 !important;
+	}
+	&.woocommerce .pagination > .active > span.color-1-text-contrast {
+		color: $text-contrast-palette-primary_2 !important;
 	}
 
 	/*-----------------------------------------------
