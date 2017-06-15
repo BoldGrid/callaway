@@ -14,7 +14,7 @@ $lighten2: lighten($palette-primary_2, 5%);
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
-	#wp-calendar tbody td { 
+	#wp-calendar tbody td {
 		background: $palette-primary_1;
 		border: 1px solid $palette-primary_2;
 		color: $text-contrast-palette-primary_1;
@@ -47,7 +47,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 		color: $text-contrast-palette-primary_1;
 	}
 	a,
-	.widget a,
 	.sidebar .nav > li > a,
 	.sidebar .nav > li::before,
 	.heading-alt,
@@ -87,6 +86,15 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.navbar-default .navbar-nav .dropdown-menu {
 		background: $palette-primary_1;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.entry-title a {
+		color: $palette-primary_1;
+	}
 	
 	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -97,16 +105,10 @@ $lighten2: lighten($palette-primary_2, 5%);
 	/*-----------------------------------------------
 	## 2
 	-----------------------------------------------*/
-	h1,
-	h3,
-	h4,
-	h5,
-	h6,
 	caption,
 	.link-secondary,
 	.entry-footer .cat-links > a,
-	.entry-footer .tags-links > a,
-	.entry-title a {
+	.entry-footer .tags-links > a {
 		color: $palette-primary_2;
 	}
 	.header-widget-area h2,
@@ -205,9 +207,9 @@ $lighten2: lighten($palette-primary_2, 5%);
 	}
 	#wp-calendar tbody td:hover,
 	.pager li > a:hover,
-	.pager li > a:focus { 
-		background: $palette-primary_4; 
-		color: $text-contrast-palette-primary_4; 
+	.pager li > a:focus {
+		background: $palette-primary_4;
+		color: $text-contrast-palette-primary_4;
 	}
 	#wp-calendar tbody td a {
 		color: $palette-primary_2;
@@ -233,12 +235,14 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.nav-next a:hover,
 	.nav-next a:focus,
 	.nav-previous a:hover,
-	.nav-previous a:focus,
+	.nav-previous a:focus {
+		color: $text-contrast-palette-primary_4;
+	}
 	.navbar-default .navbar-nav > .dropdown.active.open > a,
 	.navbar-default .navbar-nav > .dropdown.active.open > a:hover,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:hover,
 	.navbar-default .navbar-nav > li.dropdown.active.open > a:focus {
-		color: $text-contrast-palette-primary_4;
+		color: $palette-primary_4;
 	}
 	.navbar-default .navbar-nav > .current-menu-parent > a,
 	.navbar-default .navbar-nav > .current-menu-parent > a:hover,
@@ -296,17 +300,16 @@ $lighten2: lighten($palette-primary_2, 5%);
 	}
 	.panel {
 		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2; 
+		color: $text-contrast-palette-primary_2;
 	}
-	.panel h2,
 	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary_2;
 	}
 	#reviews #comments ol.commentlist li .comment-text {
 		border: 1px solid $text-contrast-palette-primary_2;
 	}
-	.nav-tabs > li.active > a, 
-	.nav-tabs > li.active > a:focus, 
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:focus,
 	.nav-tabs > li.active > a:hover,
 	.nav-tabs > li > a:hover {
 		border: 1px solid $palette-primary_2;
