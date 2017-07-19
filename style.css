@@ -581,11 +581,6 @@ footer aside.widget a {
 /*------------------------------------------------------------------------
 # Custom
 ------------------------------------------------------------------------*/
-.colored-bg {
-	padding-left: 0;
-	padding-right: 0;
-}
-
 /* WooCommerce */
 .woocommerce div.product .woocommerce-tabs .panel {
 	padding: 20px;
