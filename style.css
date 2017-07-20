@@ -384,7 +384,6 @@ code {
 ## Sidebar Widgets
 -----------------------------------------------*/
 .sidebar {
-	padding: 20px 12px;
 	margin-bottom: 25px;
 }
 .sidebar a {
@@ -396,6 +395,10 @@ code {
 }
 aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
+}
+.sidebar > aside,
+.sidebar .empty-sidebar-message {
+	padding: 20px 12px;
 }
 .widget {
 	margin-top: 20px;
