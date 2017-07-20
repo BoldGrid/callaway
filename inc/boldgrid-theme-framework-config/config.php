@@ -27,8 +27,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign menus, widgets, and actions to locations in generic footer template.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[widget]boldgrid-widget-3' ),
-		'3' => array( '[menu]social' ),
+		'1' => array( '[widget]boldgrid-widget-3' , '[menu]social' ),
 		'5' => array( '[action]boldgrid_display_contact_block' ),
 		'8' => array( '[action]boldgrid_display_attribution_links' ),
 		'11' => array( '[menu]footer_center' ),
