@@ -225,7 +225,7 @@ a:focus,
 	list-style: none;
 }
 #menu-social ul {
-	padding-left: 0px;
+	padding-left: 0;
 }
 #menu-social ul li {
 	position: relative;
@@ -555,6 +555,23 @@ a.url {
 }
 
 /*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce div.product .woocommerce-tabs .panel {
+	padding: 20px;
+}
+.nav-tabs {
+	border: none;
+}
+.woocommerce div.product .product_title {
+	text-align: left;
+}
+
+/*------------------------------------------------------------------------
 # Footer
 ------------------------------------------------------------------------*/
 .site-info {
@@ -583,18 +600,4 @@ footer aside.widget a {
 }
 .site-footer .textwidget p {
 	text-align: center;
-}
-
-/*------------------------------------------------------------------------
-# Custom
-------------------------------------------------------------------------*/
-/* WooCommerce */
-.woocommerce div.product .woocommerce-tabs .panel {
-	padding: 20px;
-}
-.nav-tabs {
-	border: none;
-}
-.woocommerce div.product .product_title {
-	text-align: left;
 }
