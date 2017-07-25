@@ -474,12 +474,6 @@ dt {
 	text-decoration: none;
 	transition: all 0.5s ease 0s;
 }
-.nav-previous {
-	float: left;
-}
-.nav-next {
-	float: right;
-}
 .navigation.posts-navigation {
 	margin-top: 25px;
 	margin-bottom: 25px;
