@@ -363,10 +363,10 @@ code {
 .widget ul#recentcomments > li.recentcomments {
 	padding: 8px 0 !important;
 }
-.widget ul#recentcomments > li::before {
+.widget ul#recentcomments > li::before { 
 	font-family: 'FontAwesome';
-	font-size: 1.2rem;
-	padding-right: 1rem;
+	font-size: 12px;
+	padding-right: 16px;
 	content: "\f04b";
 }
 .widget ul#recentcomments > li {
@@ -422,35 +422,35 @@ aside.sidebar h2.widget-title {
 /*-----------------------------------------------
 ## Calendar Widget
 -----------------------------------------------*/
-#wp-calendar caption { 
+#wp-calendar caption {
 	text-align: right; 
 	margin-top: 10px; 
 	margin-bottom: 15px; 
 }
-#wp-calendar thead th { 
+#wp-calendar thead th {
 	padding-bottom: 10px; 
 }
-#wp-calendar tbody td { 
+#wp-calendar tbody td {
 	text-align: center;
 }
-#wp-calendar tfoot #next { 
+#wp-calendar tfoot #next {
 	text-align: right; 
 }
-#wp-calendar tfoot #prev { 
+#wp-calendar tfoot #prev {
 	padding-top: 10px;  
 }
 .widget_calendar .table > tfoot > tr > td {
 	border-top: none;
 }
 td, th {
-	padding: 1.2rem 1.5rem;
+	padding: 18px 24px;
 }
 dd {
-	margin-left: 4.2rem;
-	margin-bottom: 1.2rem;
+	margin-left: 36px;
+	margin-bottom: 16px;
 }
 dt {
-	margin-bottom:.5rem;
+	margin-bottom: 10px;
 }
 
 /*-----------------------------------------------
@@ -495,8 +495,8 @@ dt {
 }
 .sidebar .widget .nav > li::before {
 	font-family: 'FontAwesome';
-	font-size: 1.2rem;
-	padding-right: 1rem;
+	font-size: 12px;
+	padding-right: 16px;
 	content: "\f04b";
 	float: left;
 	padding-top: 10px;
