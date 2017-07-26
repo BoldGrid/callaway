@@ -55,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1.2;
+	line-height: 1.2em;
 }
 p {
 	margin-bottom: 15px;
@@ -206,8 +206,8 @@ a:focus,
 .footer-center-menu {
 	padding: 1.1em 0;
 }
-.footer-center-items li:after,
-.boldgrid-framework-menu li:after {
+.footer-center-items li::after,
+.boldgrid-framework-menu li::after {
 	content: "";
 }
 
@@ -229,7 +229,7 @@ a:focus,
 }
 #menu-social ul li {
 	position: relative;
-	display: inline-block;
+	display:  inline-block;
 }
 #menu-social li a {
 	display: inline-block;
@@ -291,6 +291,9 @@ code {
 .entry-content a {
 	text-decoration: underline;
 }
+a.btn {
+	text-decoration: none;
+}
 .hentry {
 	margin: 0;
 }
@@ -332,7 +335,7 @@ code {
 # Posts
 ------------------------------------------------------------------------*/
 .panel-footer {
-	padding: 0 15px 25px;
+	padding: 0px 15px 25px;
 	border-top: none;
 }
 
@@ -363,8 +366,8 @@ code {
 .widget ul#recentcomments > li.recentcomments {
 	padding: 8px 0 !important;
 }
-.widget ul#recentcomments > li:before { 
-	font-family: "FontAwesome";
+.widget ul#recentcomments > li::before { 
+	font-family: 'FontAwesome';
 	font-size: 12px;
 	padding-right: 16px;
 	content: "\f04b";
@@ -416,7 +419,7 @@ aside.sidebar h2.widget-title {
 	text-decoration: none;
 }
 .cat-item-none:before {
-	display: none;
+	display:none;
 }
 
 /*-----------------------------------------------
@@ -487,8 +490,8 @@ dt {
 	background: none transparent;
 	text-decoration: none;
 }
-.sidebar .widget .nav > li:before {
-	font-family: "FontAwesome";
+.sidebar .widget .nav > li::before {
+	font-family: 'FontAwesome';
 	font-size: 12px;
 	padding-right: 16px;
 	content: "\f04b";
@@ -513,13 +516,13 @@ dt {
 	background: none transparent;
 }
 .entry-footer a,
-.entry-meta a {
+.entry-meta a  {
 	text-decoration: underline;
 }
 .entry-footer a:hover,
 .entry-footer a:focus,
 .entry-meta a:hover,
-.entry-meta a:focus {
+.entry-meta a:focus   {
 	text-decoration: none;
 }
 a.url,
