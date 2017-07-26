@@ -47,6 +47,8 @@ $lighten2: lighten($palette-primary_2, 5%);
 		color: $text-contrast-palette-primary_1;
 	}
 	a,
+	.comment-meta a,
+	.edit-link a.comment-edit-link,
 	.sidebar .nav > li > a,
 	.sidebar .nav > li::before,
 	.heading-alt,
@@ -128,7 +130,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 		color: $text-contrast-palette-primary_2;
 	}
 	.comments,
-	.comment-meta a,
 	.site-footer,
 	.panel-heading,
 	.media-heading,
@@ -201,7 +202,7 @@ $lighten2: lighten($palette-primary_2, 5%);
 		border-left: 5px solid $palette-primary_4;
 	}
 	pre,
-  #respond .alert.alert-info {
+	#respond .alert.alert-info {
 		color: $text-contrast-palette-primary_4;
 		background-color: $palette-primary_4;
 		border: 1px solid $palette-primary_3;

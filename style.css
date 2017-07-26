@@ -522,8 +522,14 @@ dt {
 .entry-meta a:focus   {
 	text-decoration: none;
 }
-a.url {
+a.url,
+a.comment-edit-link {
 	text-decoration: underline;
+}
+a.url:hover,
+.comment-meta a:hover,
+.edit-link a:hover {
+	text-decoration: none;
 }
 
 /*-----------------------------------------------
