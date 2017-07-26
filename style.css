@@ -49,11 +49,11 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
 	line-height: 1.2em;
 }
@@ -463,12 +463,12 @@ dt {
 .navbar-nav > li > a {
 	text-decoration: none;
 }
-.nav-next,
+/*.nav-next,
 .nav-previous {
 	margin-bottom: 25px;
 	padding: 8px 30px;
 	transition: all 0.5s ease 0s;
-}
+}*/
 .pager li > a {
 	border-radius: 0;
 	text-decoration: none;

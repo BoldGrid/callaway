@@ -24,11 +24,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 		background-color: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.nav-next,
-	.nav-previous {
-		background-color: $palette-primary_1;
-		border: 1px solid $palette-primary_3;
-	}
 	.pager li > a {
 		background-color: $palette-primary_1;
 		border: 1px solid $palette-primary_3;
@@ -216,10 +211,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	#wp-calendar tbody td a {
 		color: $palette-primary_2;
 	}
-	.nav-next:hover,
-	.nav-previous:hover {
-		background: $palette-primary_4;
-	}
 	.tagcloud a:hover,
 	.tagcloud a:focus,
 	#menu-social li a:hover,
@@ -233,12 +224,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.widget ul#recentcomments > li > span > a:hover,
 	.widget ul#recentcomments > li > span > a:focus {
 		color: $palette-primary_4;
-	}
-	.nav-next a:hover,
-	.nav-next a:focus,
-	.nav-previous a:hover,
-	.nav-previous a:focus {
-		color: $text-contrast-palette-primary_4;
 	}
 	.navbar-default .navbar-nav > .dropdown.active.open > a,
 	.navbar-default .navbar-nav > .dropdown.active.open > a:hover,
