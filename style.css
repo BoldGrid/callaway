@@ -508,9 +508,6 @@ dt {
 .entry-meta {
 	padding-bottom: 30px;
 }
-.entry-footer {
-	background: none transparent;
-}
 .entry-footer a,
 .entry-meta a {
 	text-decoration: underline;

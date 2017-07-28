@@ -260,13 +260,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	hr {
 		background: $text-contrast-palette-primary-neutral-color;
 	}
-	.entry-footer {
-		background-color: $palette-primary-neutral-color;
-	}
-	.entry-footer a {
-		background: $palette-primary-neutral-color;
-		color: $text-contrast-palette-primary-neutral-color;
-	}
 	.navbar-default .navbar-toggle {
 		background: $palette-primary-neutral-color;
 		border-color: $palette-primary-neutral-color;
@@ -346,6 +339,14 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.button-secondary:hover,
 	.button-secondary:focus {
 		background-color: $lighten2;
+		color: $text-contrast-palette-primary_2;
+	}
+	
+	/*-----------------------------------------------
+	## Additional Body Classes
+	-----------------------------------------------*/
+	&.page .entry-footer .fa-pencil,
+	&.page .entry-footer a {
 		color: $text-contrast-palette-primary_2;
 	}
 }
