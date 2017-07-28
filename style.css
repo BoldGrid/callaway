@@ -267,10 +267,6 @@ hr {
 	border: 0;
 	height: 1px;
 }
-ul li,
-ol li {
-	line-height: 2.5;
-}
 code {
 	border-radius: 4px;
 }
