@@ -341,14 +341,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 		background-color: $lighten2;
 		color: $text-contrast-palette-primary_2;
 	}
-	
-	/*-----------------------------------------------
-	## Additional Body Classes
-	-----------------------------------------------*/
-	&.page .entry-footer .fa-pencil,
-	&.page .entry-footer a {
-		color: $text-contrast-palette-primary_2;
-	}
 }
 
 .palette-primary.disabled-footer .site-footer {
