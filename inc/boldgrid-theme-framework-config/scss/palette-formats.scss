@@ -1,10 +1,4 @@
 /*------------------------------------------------------------------------
-# Variables
-------------------------------------------------------------------------*/
-$lighten1: lighten($palette-primary_1, 5%);
-$lighten2: lighten($palette-primary_2, 5%);
-
-/*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
@@ -92,7 +86,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.entry-title a {
 		color: $palette-primary_1;
 	}
-	
 	@media only screen and (min-width: 768px) {
 		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 			color: $text-contrast-palette-primary_1;
@@ -164,8 +157,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	hr.color5-color {
 		background: $text-contrast-palette-primary_2 !important;
 	}
-
-	/* Custom */
 	.colored-bg {
 		background: $palette-primary_2;
 	}
@@ -182,8 +173,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 	.navbar-default .navbar-nav > li > a {
 		color: $palette-primary_3;
 	}
-
-	/* Custom */
 	.call-to-action h2,
 	.call-to-action h4 {
 		color: $palette-primary_3;
@@ -245,8 +234,6 @@ $lighten2: lighten($palette-primary_2, 5%);
 		border-bottom: 1px solid $palette-primary_5;
 		color: $palette-primary_5;
 	}
-	
-	/* Custom */
 	.colored-bg h2,
 	.colored-bg h3,
 	.colored-bg h4,
@@ -319,30 +306,11 @@ $lighten2: lighten($palette-primary_2, 5%);
 	&.woocommerce .pagination > .active > span.color-1-text-contrast {
 		color: $text-contrast-palette-primary_2 !important;
 	}
-
-	/*-----------------------------------------------
-	## Buttons
-	-----------------------------------------------*/
-	.button-primary {
-		background-color: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-	}
-	.button-secondary {
-		background-color: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
-	}
-	.button-primary:hover,
-	.button-primary:focus {
-		background-color: $lighten1;
-		color: $text-contrast-palette-primary_1;
-	}
-	.button-secondary:hover,
-	.button-secondary:focus {
-		background-color: $lighten2;
-		color: $text-contrast-palette-primary_2;
-	}
 }
 
+/*------------------------------------------------------------------------
+# Additional Body Classes
+------------------------------------------------------------------------*/
 .palette-primary.disabled-footer .site-footer {
 	background-color: $palette-primary-neutral-color;
 }
