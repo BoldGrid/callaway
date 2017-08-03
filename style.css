@@ -287,9 +287,6 @@ code {
 .entry-content a {
 	text-decoration: underline;
 }
-a.btn {
-	text-decoration: none;
-}
 .hentry {
 	margin: 0;
 }
