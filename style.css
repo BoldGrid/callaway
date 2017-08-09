@@ -146,6 +146,21 @@ a:focus,
 	background: none;
 }
 
+.nav-links .nav-next,
+.nav-links .nav-previous {
+	position: relative;
+}
+
+.nav-links .nav-previous a:after,
+.nav-links .nav-next a:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
 /* navbar links */
 .navbar-default .navbar-nav > li > a {
 	padding: 10px;
