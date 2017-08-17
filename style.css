@@ -288,7 +288,7 @@ code {
 	text-decoration: underline;
 }
 .hentry {
-	margin: 0;
+	margin: 0 auto 50px;
 }
 
 /* gallery */
