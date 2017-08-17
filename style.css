@@ -392,7 +392,7 @@ code {
 aside.sidebar h2.widget-title {
 	padding-bottom: 10px;
 }
-.sidebar > aside,
+.sidebar,
 .sidebar .empty-sidebar-message {
 	padding: 20px 12px;
 }
