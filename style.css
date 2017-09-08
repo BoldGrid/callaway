@@ -287,9 +287,6 @@ code {
 .entry-content a {
 	text-decoration: underline;
 }
-.hentry {
-	margin: 0 auto 50px;
-}
 
 /* gallery */
 .gallery {
@@ -330,6 +327,9 @@ code {
 .panel-footer {
 	padding: 0 15px 25px;
 	border-top: none;
+}
+.post {
+	margin: 0 auto 50px;
 }
 
 /*-----------------------------------------------
@@ -542,7 +542,7 @@ a.url:hover,
 	margin-left: -15px;
 }
 .blog h1.entry-title {
-	text-align: left;
+	text-align: center;
 }
 
 /*------------------------------------------------------------------------
